@@ -8,3 +8,4 @@ Follow the guide [DeathChaos](https://gamebanana.com/members/1694106) made over 
 ## Known Issues / To-Dos
 - Currently the Mod Loader only supports loading modified Asset Bundles, work on being able to load modified acb/awb and usm files is in progress.
 - Working on an option to change the location of the mods folder, currently defaults to the root of the game folder
+- Possibility of using loose files instead of Asset Bundles
