@@ -25,7 +25,15 @@ internal class ModLoader
         path = ModFile(path);
         if (Plugin.Instance.verboseMode.Value) LogFile(path);
     }
-
+    
+    /*[HarmonyPatch(typeof(AtSoundManager), "LoadPack")] HarmonyPatch for AWB/ACB files
+    [HarmonyPrefix]
+    private static void LoadPack(ref string path)
+    {
+        path = ModFile(path);
+        if (Plugin.Instance.verboseMode.Value) LogFile(path);
+    }
+    */
     private static void LogFile(string path) => _fileLog.LogInfo(path.Replace(Application.streamingAssetsPath, ""));
 
     private static string ModFile(string path)
