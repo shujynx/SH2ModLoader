@@ -22,7 +22,7 @@ public class Plugin : BasePlugin
         Log = base.Log;
 
         Log.LogInfo($"{MyPluginInfo.PLUGIN_NAME} is loaded!");
-        string modsPath = Application.dataPath.Replace("/SOUL HACKERS2_Data", "/mods");
+        string modsPath = Application.streamingAssetsPath + "/mods";
         if (!Directory.Exists(modsPath)) 
         {
             Directory.CreateDirectory(modsPath);
